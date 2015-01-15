@@ -1,0 +1,58 @@
+// @if $use-rules == true{}
+
+@import '../global/vars.scss';
+@import '../global/mixins.scss';
+
+/*
+  ____  _   _ _     _____ ____  
+ |  _ \| | | | |   | ____/ ___| 
+ | |_) | | | | |   |  _| \___ \ 
+ |  _ <| |_| | |___| |___ ___) |
+ |_| \_\\___/|_____|_____|____/ 
+                                                                                                                                                                                                                                                                                                   
+ */
+
+/* ==========================================================================
+   <hr> or rule dividers
+   ========================================================================== 
+   */
+
+hr {
+	color: darken($off-white, 3%);
+	border: none;
+	border-bottom-style: solid;
+	margin-bottom: 2em;
+
+	@include mq(sm) {
+		width: 100%;
+	}
+}
+
+.rule {
+	display: inline-block;
+	border-bottom: 2px solid lighten($light-gray, 16%);
+	margin-top: 1em;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+
+	@include mq(sm) {
+		width: 100%;
+	}
+
+	&.collapse {
+		width: 85%;
+	}
+}
+
+ // Extends classes for <hr> rules
+ 
+ .rule-dotted {
+ 	border-bottom-style: dotted;
+ }
+
+
+//Dashed rules
+
+.rule-dashed {
+	border-bottom-style: dashed;
+}

@@ -1,0 +1,475 @@
+<header class="nav-header main-header md-12" role="navigation">
+		<a href="#" id="brand" class="brand"><%= image_tag("xiri_logo.svg", :alt => "XIRI Logo") %></a>
+		<nav id="magic-nav" class="magic-nav">
+			<div id="menu-icon"  class="menu-icon">
+				<span id="menu-btn" class="menu-btn" >MENU</span>
+				<span id="open-btn" class="open-btn">OPEN</span>
+			</div>
+			<section id="main-nav" class="main-nav">
+				<ul class="left">
+					<li class=""><a href="#">HOME</a></li>
+					<li class=""><a href="#work">WORK</a></li>
+					<li class=""><a href="#strategy" >STRATEGY</a></li>
+					<li class=""><a href="#clients">CLIENTS</a></li>
+					<li class=""><a href="#contact">CONTACT</a></li>
+				</ul>
+			</section> <!-- .main-nav -->
+		</nav><!-- #magic-nav -->
+	</header><!-- .nav-header -->
+
+
+	<span class="components-ctrl" id="top" ng-controller="HomeController" ng-init="init()">
+		
+		<superhero class="md-12 col normal bg primary">
+			<div class="sm-2 md-4 lg-3 xl-3 col guy-pointing">
+			<%= image_tag("home_page_guy_pointing.svg", :alt => "Vintage guy illustration pointing at text") %>
+			</div>
+			<div class="sm-12 md-8 lg-9 xl-9 col superhero-content">
+				<h2 class="">XIRI [zeer-ee]</h2>
+				<h4 class="">Hello! At XIRI we focus on delivering beautifully crafted user experiences to our clients through simple, mobile first, speed optimized... and accessible solutions.. </h4>
+				<a href="" class="btn btn-mini btn-empty btn-no-expand"><span>Contact Us</span></a>
+			</div>
+		</superhero>
+
+		<row class="about-container">
+			<div class="md-4 lg-3 xl-3 col about-container-left"></div><!-- /.about-container-left -->
+
+			<div class="md-8 lg-9 xl-9 col about-container-right">
+				<h2>About XIRI</h2>
+				<p class="bodytext">XIRI is a Denver based UX and development company specializing in fresh and unique mobile-first website development. We build brands, create sites and apps and drink a lot of coffee in the process.
+
+				With over 15 years of experience in UI and web, we’ve worked with just about every size and type of client from all industries. </p>
+			</div><!-- /.about-container-right -->
+		</row><!-- /.about-container -->
+
+		<row>
+			<section id="quote-container" class="quote-container col">
+				<div class="md-9 lg-10 xl-10 col quote-container-left">
+					<p class="quotetext">DESIGN IS NOT JUST WHAT IT LOOKS LIKE AND FEELS LIKE... DESIGN IS HOW IT WORKS.</p>
+					<small>~ Steve Jobs</small>
+				</div><!-- /.quote-container-left -->
+				<div class="md-3 lg-2 xl-2 col car-illustration">
+					<%= image_tag("full-service-car.svg", :alt => "Retro Car Image - Full Service Design") %>
+				</div><!-- /.quote-container-right -->
+			</section><!-- /.quote-container -->
+		</row>
+
+		<row>
+			<section id="services-container" class="services-container col">
+
+				<div class="md-12 lg-12 xl-12 services-header">
+					<h2>Our Services</h2>
+					<p class="bodytext">What does XIRI offer in the way of services?</p>
+				</div>
+				
+				<section class="services-container-inside">
+					<div class="md-6 lg-6 xl-6 col services-container-left">
+
+						<div class="services-block">		
+							<div class="services-block-left">
+								<%= image_tag("services-icon-webdev.svg", :alt => "Website Development Services Icon") %>
+							</div><!-- /.services-block-left -->
+
+							<div class="services-block-right">
+								<h3>Website Development</h3>
+								<p>I can give your website’s visitors the best in modern, clean design. Taking a professional approach, I utilize features such as flat design and simplicity to make your website pixel perfect. If you’re looking to add something more, why not try a web app?</p>
+							</div><!-- /.services-block-right -->
+
+						</div><!-- /.services-block -->
+
+						<div class="services-block">		
+							<div class="services-block-left">
+								<%= image_tag("services-icon-ui.svg", :alt => "User Interface Services Icon") %>
+							</div><!-- /.services-block-left -->
+
+							<div class="services-block-right">
+								<h3>User Interface</h3>
+								<p>The way that your consumer interacts with your website is the way that defines their emotional connection the brand. With my designs, you will gain an engaged customer for years to come.</p>
+							</div><!-- /.services-block-right -->
+
+						</div><!-- /.services-block -->
+
+						<div class="services-block">		
+							<div class="services-block-left">
+								<%= image_tag("services-icon-performance.svg", :alt => "Performance Services Icon") %>
+							</div><!-- /.services-block-left -->
+
+							<div class="services-block-right">
+								<h3>Focus on Performance</h3>
+								<p>I can give your website’s visitors the best in modern, clean design. Taking a professional approach, I utilize features such as flat design and simplicity to make your website pixel perfect. If you’re looking to add something more, why not try a web app?</p>
+							</div><!-- /.services-block-right -->
+
+						</div><!-- /.services-block -->
+
+					</div><!-- /.services-container-left -->
+
+					<div class="md-6 lg-6 xl-6 col services-container-right">
+
+						<div class="services-block">		
+							<div class="services-block-left">
+								<img src="svg/services-icon-mobilefirst.svg" alt="Mobile First Services Icon">
+							</div><!-- /.services-block-left -->
+
+							<div class="services-block-right">
+								<h3>Mobile First Design</h3>
+								<p>vision for the next great mobile app. Our job is to turn that idea into reality. Whether your application is targeted to the consumer market or businesses, PhD Labs has the creativity and expertise to bring it to life.</p>
+							</div><!-- /.services-block-right -->
+
+						</div><!-- /.services-block -->
+
+						<div class="services-block">		
+							<div class="services-block-left">
+								<%= image_tag("services-icon-ux.svg", :alt => "User Experience Services Icon") %>
+							</div><!-- /.services-block-left -->
+
+							<div class="services-block-right">
+								<h3>User Experience</h3>
+								<p>My designs will tantalize your web visitors senses with vibrant displays, easy navigation, and an intuitive layout. It is my goal to let the user feel a little excitement every time they visit your website.</p>
+							</div><!-- /.services-block-right -->
+
+						</div><!-- /.services-block -->
+
+						<div class="services-block">		
+							<div class="services-block-left">
+								<img src="svg/services-icon-accessibility.svg" alt="Accessibility Services Icon">
+							</div><!-- /.services-block-left -->
+
+							<div class="services-block-right">
+								<h3>Accessibility</h3>
+								<p>I can give your website’s visitors the best in modern, clean design. Taking a professional approach, I utilize features such as flat design and simplicity to make your website pixel perfect. If you’re looking to add something more, why not try a web app?</p>
+							</div><!-- /.services-block-right -->
+
+						</div><!-- /.services-block -->
+
+					</div><!-- /.services-container-right -->
+				</section><!-- /.services-container-inside -->
+			</section><!-- /.services-container -->
+
+		</row>
+
+		<row>
+			<section class="divider-1">
+				<div class="box-1"></div>
+				<div class="box-2"></div>
+				<div class="box-3"></div>
+				<div class="box-4"></div>
+			</section>
+		</row>
+
+		<row>
+
+			<section id="ourwork-container" class="ourwork-container">
+
+				<div class="md-12 lg-12 xl-12 ourwork-header">
+					<h2>Our Work</h2>
+					<p class="bodytext">Check out the latest projects we’ve been working on</p>
+				</div>
+
+				<section class="masonry-container">
+
+					<div class="masonry">
+
+						<article class="item">
+							<h3>Responsive Web Application</h3>
+							<h4>Oppenheimer Funds - Centennial, CO</h4>
+							<h5>HTML5, CSS3, SASS, jQuery, Javascript, AngularJS, Rails</h5>
+							<div class="image"></div>
+							<div class="buttons">
+								<a href="https://www.oppenheimerfunds.com/investor" class="btn btn-secondary btn-mini"><span>VIEW SITE</span></a>
+							</div><!-- END .buttons -->
+						</article><!-- END .item -->
+
+						<article class="item">
+							<h3>Responsive Website</h3>
+							<h4>Realtime Music - New York, NY</h4>				
+							<h5>HTML5, CSS3, SASS, jQuery, Javascript, Bootstrap</h5>
+							<div class="image"></div>
+							<div class="buttons">
+								<a href="http://www.rms.biz" target="blank" class="btn btn-secondary btn-mini"><span>VIEW SITE</span></a>
+							</div><!-- END .buttons -->
+						</article><!-- END .item -->
+
+						<article class="item">
+							<h3>Responsive Web & Mobile</h3>
+							<h4>Western Ecosystems - Cheyenne, WY</h4>				
+							<h5>HTML5, CSS3, SASS, jQuery, Javascript, Wordpress</h5>
+							<div class="image"></div>
+							<div class="buttons">
+								<a href="http://www.west-inc.com" target="blank" class="btn btn-secondary btn-mini"><span>VIEW SITE</span></a>
+							</div><!-- END .buttons -->
+						</article><!-- END .item -->
+
+						<article class="item">
+							<h3>Tablet App</h3>
+							<h4>Cricket Wireless - Denver, CO</h4>
+							<h5>HTML5, CSS3, SASS, jQuery, Javascript</h5>
+							<div class="image"></div>
+							<div class="buttons">
+								<a href="#" target="blank" class="btn btn-secondary btn-mini"><span>VIEW WIREFRAME</span></a>
+							</div><!-- END .buttons -->
+						</article><!-- END .item -->
+						
+						<article class="item">
+							<h3>Responsive Task App</h3>
+							<h4>DaVita - Denver, CO</h4>
+							<h5>HTML5, CSS3, SASS, jQuery, Javascript</h5>
+							<div class="image"></div>
+							<div class="buttons">
+								<a href="#" target="blank" class="btn btn-secondary btn-mini"><span>VIEW WIREFRAME</span></a>
+							</div><!-- END .buttons -->
+						</article><!-- END .item -->
+
+						<article class="item">
+							<h3>Responsive Web Design</h3>
+							<h4>XIRI Media - Denver, CO</h4>
+							<h5>HTML5, CSS3, SASS, jQuery, Javascript</h5>
+							<div class="image"></div>
+							<div class="buttons">
+								<a href="http://www.xirimedia.com" target="blank" class="btn btn-secondary btn-mini"><span>VIEW SITE</span></a>
+							</div><!-- END .buttons -->
+						</article><!-- END .item -->
+
+						<article class="item">
+							<h3>Clinic App</h3>
+							<h4>DaVita - Denver, CO</h4>
+							<h5>HTML5, CSS3, SASS, jQuery, Javascript</h5>
+							<div class="image"></div>
+							<div class="buttons">
+								<a href="http://www.davitaapps.com/index.html" target="blank" class="btn btn-secondary btn-mini">VIEW WIREFRAME</a>
+							</div><!-- END .buttons -->
+						</article><!-- END .item -->
+
+						<article class="item">
+							<h3>Application UI/UX</h3>
+							<h4>Cricket Wireless - Denver, CO</h4>
+							<h5>HTML5, CSS3, SASS, jQuery, Javascript</h5>
+							<div class="image"></div>
+							<div class="buttons">
+								<a href="http://www.xirimedia.com/cricket/CID2/1.php" target="blank" class="btn btn-secondary btn-mini"><span>VIEW SITE</span></a>
+							</div><!-- END .buttons -->
+						</article><!-- END .item -->
+
+						<article class="item">
+							<h3>Responsive Web & Mobile App</h3>
+							<h4>Stream Energy - Alpharetta, GA</h4>
+							<h5>HTML5, CSS3, SASS, jQuery Mobile</h5>
+							<div class="image"></div>
+							<div class="buttons">
+								<a href="http://www.mystream.com/" target="blank" class="btn btn-secondary btn-mini"><span>VIEW SITE</span></a>
+							</div><!-- END .buttons -->
+						</article><!-- END .item -->
+
+					</div><!--END .masonry -->
+
+				</section><!--END .masonry-container-->
+
+			</section><!-- /.ourwork-container -->
+
+		</row>
+
+		<row>
+			<section class="divider-2">
+				<div class="box-1"></div>
+				<div class="box-2"></div>
+				<div class="box-3"></div>
+				<div class="box-4"></div>
+			</section>
+		</row>
+
+		<row>
+
+			<section id="strategy-container" class="strategy-container">
+
+				<div class="md-12 lg-12 xl-12 strategy-header">
+					<h2>Strategy</h2>
+					<p class="bodytext">Which comes first... the chicken or the egg?</p>
+				</div>
+
+				<section class="strategy-container-inside">
+
+					<div class="strategy-box-define">
+						<%= image_tag("strategy-icons-lightbulb.svg", :alt => "Strategies Icon for Define - Lightbulb") %>
+						<h2>DEFINE.</h2>
+						<p class="bodytext">This is the stage where we LISTEN to you and focus on uncovering your goals and objectives. This is the first and most critical part of any creative process. 
+
+						We meet with you in person or over the phone to help 'Define' and determine the best strategy for building and enhancing your business. We work hand-in-hand with you to forge the best strategy that will live up to it's fullest creative potential.</p>
+					</div>
+
+					<div class="strategy-box-design">
+						<%= image_tag("strategy-icons-circles.svg", :alt => "Strategies Icon for Design - Intersecting Circles") %>
+						<h2>DESIGN.</h2>
+						<p class="bodytext">During this phase of the creative process, we iron out all of the "visual look and feel" components of your new design or brand. This is the FUN stuff! 
+
+						The end results come directly from your input and feedback. With a regular review and approval of all design proofs and wireframes, you can feel confident you will end up with a product you can be proud of!</p>
+					</div>
+
+					<div class="strategy-box-develop">
+						<%= image_tag("strategy-icons-gears.svg", :alt => "Strategies Icon for Develop - Gears") %>
+						<h2>DEVELOP.</h2>
+						<p class="bodytext">Now that we have made everything "real," the next step in the creative process is to focus onall of the little details. We work closely with you to develop and enhance a design strategy that will push your expectations to the next level. 
+
+						We never move forward from development until you are completely satisfied with the results of the cooperative "Design" and "Development" processes.</p>
+					</div>
+
+				</section>
+
+			</section>
+			
+		</row>
+
+		<row>
+
+			<section id="quote-container-2" class="quote-container col">
+
+				<div class="md-9 lg-10 xl-10 col quote-container-right">
+					<p class="quotetext">VISION IS THE ART OF SEEING WHAT IS INVISIBLE TO OTHERS.</p>
+					<small>~ Jonathan Swift</small>
+				</div><!-- /.quote-container-right -->
+			</section><!-- /.quote-container -->
+
+		</row>
+
+		<section class="vintage-tv">
+			<%= image_tag("vintage-tv-set.svg", :alt => "Vintage TV Set Illustration") %>
+		</section><!-- /.quote-container-left -->
+
+		<row>
+			<section class="divider-3">
+				<div class="box-1"></div>
+				<div class="box-2"></div>
+				<div class="box-3"></div>
+				<div class="box-4"></div>
+			</section><!-- /.divider-3 -->	
+		</row>
+
+		<row>
+
+			<section id="clients-container" class="clients-container">
+
+				<div class="md-12 lg-12 xl-12 clients-header">
+					<h2>Who We've Worked with</h2>
+					<p class="bodytext">Is name-dropping allowed?</p>
+				</div><!-- /.clients-header -->	
+
+				<section class="clients-container-inside">
+					<div class="client-logo logo-1">
+						<a href="http://www.oppenheimerfunds.com/investors/" target="blank">
+							<%= image_tag("clients_logo_oppenheimer.png", :alt => "Client: Oppenheimer Funds") %>
+						</a>
+					</div>
+					<div class="client-logo logo-2">
+						<a href="https://www.cricketwireless.com" target="blank">
+							<%= image_tag("clients_logo_cricket.png", :alt => "Client: Cricket Communications") %>
+						</a>
+					</div>
+					<div class="client-logo logo-3">
+						<a href="http://www.spacefoundation.org" target="blank">
+							<%= image_tag("clients_logo_spaceFoundation.png", :alt => "Client: National Space Foundation") %>
+						</a>
+					</div>
+					<div class="client-logo logo-4">
+						<a href="http://www.mcdonalds.com/us/en/home.html" target="blank">
+							<%= image_tag("clients_logo_mcdonalds.png", :alt => "Client: McDonald's") %>
+						</a>
+					</div>
+					<div class="client-logo logo-5">
+						<a href="http://www.davita.com" target="blank">
+							<%= image_tag("clients_logo_davita.png", :alt => "Client: DaVita") %>
+						</a>
+					</div>
+					<div class="client-logo logo-6">
+						<a href="www.deloitte.com/" target="blank">
+							<%= image_tag("clients_logo_deloitte.png", :alt => "Client: DaVita") %>
+						</a>
+					</div>
+					<div class="client-logo logo-7">
+						<a href="http://www.westernunion.com/" target="blank">
+							<%= image_tag("clients_logo_westernUnion.png", :alt => "Client: Western Union") %>
+						</a>
+					</div>
+					<div class="client-logo logo-8">
+						<a href="http://www.wireless.att.com/" target="blank">
+							<%= image_tag("clients_logo_ATT.png", :alt => "Client: AT&T Wireless") %>
+						</a>
+					</div>
+					<div class="client-logo logo-9">
+						<a href="http://www.regis.edu" target="blank">
+							<%= image_tag("clients_logo_regis.png", :alt => "Client: Regis University") %>
+						</a>
+					</div>
+				</section><!-- /.clients-container-inside -->	
+
+			</section><!-- /.clients-container -->	
+
+		</row>
+
+		<row>
+			<section class="divider-4">
+				<div class="box-1"></div>
+				<div class="box-2"></div>
+				<div class="box-3"></div>
+				<div class="box-4"></div>
+			</section>
+		</row><!-- /.divider-4 -->
+
+
+
+		<section id="contact-container" class="contact-container">
+
+			<div class="md-12 lg-12 xl-12 contact-header">
+				<h2>Contact Us</h2>
+				<p class="bodytext">Drop us a line!</p>
+			</div><!-- /.contact-header -->	
+
+			<section class="contact-container-inside">
+				<div class="contact-container-inside-left">
+					<fullname></fullname>
+					<emailaddress></emailaddress>
+					<phonenumber></phonenumber>
+					<comments></comments>
+				</div>
+				<div class="contact-container-inside-right">
+					<h3>Address:</h3>
+					<p>XIRI Media, LLC</br>Aurora, CO 80014 USA</p>
+					<h3>Email:</h3>
+					<a href="mailto: thomas@xiri.io">thomas@xiri.io</p>
+					<h3>Phone:</h3>
+					<a href="tel:+1-720-984-6998">(720) 984.6998</a>
+				</div>
+			</section><!-- /.contact-container-inside -->
+
+		</section><!-- /.contact-container -->	
+
+		<button id="scrollToTop" class="btn btn-secondary scroll-to-top"><span>Back to Top</span></button>
+
+	</span><!-- /.ComponentsController -->	
+
+	<!-- Magical Spells -->
+	<script src="js/application.min.js"></script>
+
+	<script>
+    $(window).load(function() {
+          //JS BELOW IS FOR MASONRY INITIALIZATION
+          $('.masonry').masonry({
+           itemSelector : '.item',
+           isAnimated: true,
+           animationOptions: {
+            duration: 700,
+            easing: 'linear',
+            queue: false
+          }
+        });
+      });
+  </script>
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-57137070-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
